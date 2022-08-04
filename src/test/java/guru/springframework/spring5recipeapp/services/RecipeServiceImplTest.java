@@ -15,7 +15,7 @@ import static org.mockito.Mockito.*;
 
 public class RecipeServiceImplTest {
 
-    RecipeServiceImpl recipeService;
+    RecipeService recipeService;
 
     @Mock
     RecipeRepository recipeRepository;
@@ -39,5 +39,6 @@ public class RecipeServiceImplTest {
 
         assertEquals(recipes.size(), 1);
         verify(recipeRepository, times(1)).findAll();
+
     }
 }
