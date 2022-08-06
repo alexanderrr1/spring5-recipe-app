@@ -22,7 +22,7 @@ public class RecipeControllerTest {
     RecipeController recipeController;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         MockitoAnnotations.openMocks(this);
         recipeController = new RecipeController(recipeService);
     }
